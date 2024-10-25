@@ -1,0 +1,96 @@
+.div ul li {
+  margin-top: 10px;
+  color: #222d2e;
+}
+
+.topList {
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.div ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.a {
+  font-size: 25px;
+  color: #222d2e;
+}
+
+@media (min-width: 952px) and (max-width: 1000px) {
+  .links {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 956px) {
+  .p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .links {
+    display: none;
+  }
+  .a {
+    display: none;
+  }
+
+  .div {
+    font-size: 13px;
+  }
+
+  .p p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 700px) {
+  .a {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .div {
+    height: 100vh;
+  }
+
+  .p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 630px) {
+  .div {
+    width: 100%;
+    font-size: 13px;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .ul3 {
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+  }
+  .a {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .p {
+    width: 100%;
+    text-align: center;
+  }
+  .ptag {
+    font-size: 13px;
+  }
+}

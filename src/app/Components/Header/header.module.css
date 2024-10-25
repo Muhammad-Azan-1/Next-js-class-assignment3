@@ -1,0 +1,162 @@
+.anchorDiv a {
+  position: relative;
+  font-size: 18px;
+  gap: 20px;
+}
+
+.anchorDiv a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #ef8d21;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+.anchorDiv a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.button2:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 35px -3px #bf5e10;
+}
+
+.barsIcon {
+  display: none;
+}
+.crossIcon {
+  display: none;
+}
+
+.scooter {
+  display: none;
+}
+
+.log {
+  display: none;
+}
+
+@media (min-width: 1000px) and (max-width: 1248px) {
+  .button2 {
+    width: 260px;
+    font-size: 16px;
+    margin-left: 7px;
+    margin-left: 15px;
+  }
+
+  .anchorDiv a {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .button2 {
+    width: 350px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 3px;
+  }
+
+  .anchorDiv a {
+    gap: 30px;
+    font-size: 16px;
+    margin-left: 30px;
+  }
+
+  .login {
+    padding: 2px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .buttonsDiv {
+    display: none;
+  }
+
+  .barsIcon {
+    display: block;
+  }
+
+  .scooter {
+    display: block;
+  }
+
+  .log {
+    display: block;
+  }
+
+  .anchorDiv {
+    position: fixed !important;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100vh;
+
+    background-color: #ef8d21;
+    width: 300px;
+    transition: right 0.3s ease;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  .crossIcon {
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    left: 10px;
+    top: 10px;
+  }
+
+  .anchorDiv a {
+    position: relative;
+    right: 30px;
+    color: #364547;
+    font-size: 18px;
+  }
+
+  .homeA {
+    margin-top: -50px;
+  }
+  .anchorDiv .h {
+    margin-top: -150px;
+  }
+
+  .toggleRight {
+    right: 0;
+  }
+
+  .hideMenu {
+    right: -300px;
+  }
+}
+
+/* working for just h2 */
+
+@media (min-width: 500px) and (max-width: 655px) {
+  .scooter h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .scooter h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .scooter h1 {
+    font-size: 25px;
+  }
+}

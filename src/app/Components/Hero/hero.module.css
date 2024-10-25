@@ -1,0 +1,399 @@
+.img {
+  position: absolute;
+  left: 45px;
+  top: 260px;
+}
+
+.text_content h1 {
+  font-weight: 500;
+  line-height: 80px;
+}
+
+.text_content h1 span {
+  font-weight: 900;
+  word-spacing: 2px !important;
+}
+
+.text_content h2 {
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.text_content {
+  word-spacing: 3px;
+  animation: customAni 5s ease normal 1s 1;
+  z-index: -4;
+}
+
+.img2 {
+  background-image: url("/Images/Vector 4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 335px;
+  height: 350px;
+  animation: ImageSlider 1.5s ease-in 1s forwards;
+  z-index: -3;
+  position: relative;
+  top: 325px;
+  left: 4px;
+  visibility: hidden;
+}
+
+.img3 {
+  background-image: url("/Images/bgOrange.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 290px;
+  height: 300px;
+  position: relative;
+  left: 27px;
+  animation: ImageSlider 2s ease-in 1s forwards;
+  z-index: -2;
+  visibility: hidden;
+}
+
+.img4 {
+  background-image: url("/Images/cartoon.png");
+  background-size: cover;
+  height: 310px;
+  width: 130px;
+  position: relative;
+  bottom: 300px;
+  left: 120px;
+  animation: ImageSlider 2.15s ease-in 2s forwards; /*with the help of forward as animation go to it's final state that style will apply to the image*/
+  z-index: -1;
+  visibility: hidden;
+}
+
+.img {
+  z-index: -2;
+}
+
+.imageBox {
+  z-index: -10;
+}
+
+@keyframes ImageSlider {
+  0% {
+    opacity: 0;
+    transform: translateY(-600px);
+  }
+
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+
+    filter: drop-shadow(0 0 80px #ef8d21); /* Change shadow effect */
+  }
+}
+
+/* Copy this code after the above code */
+@keyframes customAni {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1248px) {
+  .text_content h2 {
+    font-size: 35px;
+  }
+  .text_content h1 {
+    font-size: 40px;
+  }
+  .text_content p {
+    font-size: 12px;
+  }
+
+  .img {
+    width: 350px;
+    height: 250px;
+    left: 5px;
+    top: 250px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .text_content h2 {
+    font-size: 29px;
+    line-height: 30px;
+  }
+  .text_content h1 {
+    font-size: 35px;
+  }
+  .text_content p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .img2 {
+    width: 300px;
+    height: 314px;
+    position: relative;
+    top: 310px;
+  }
+
+  .img3 {
+    left: 19px;
+    top: 13px;
+    width: 270px;
+    height: 280px;
+  }
+
+  .img4 {
+    position: relative;
+    left: 100px;
+    bottom: 270px;
+  }
+  .img {
+    position: absolute;
+    left: 0px;
+    top: 280px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img {
+    display: none !important;
+  }
+  .text_content {
+    text-align: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .text_content h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    line-height: 40px;
+  }
+  .text_content h2 {
+    font-size: 45px;
+  }
+
+  .img2 {
+    position: relative;
+    top: 8px;
+  }
+
+  .img3 {
+    position: relative;
+    top: -320px;
+  }
+
+  .img4 {
+    position: relative;
+    bottom: 615px;
+    left: 110px;
+  }
+
+  .imageBox {
+    height: 400px;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img {
+    display: none !important;
+  }
+
+  .text_content {
+    text-align: center;
+  }
+
+  .text_content h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .text_content h2 {
+    font-size: 40px;
+  }
+  .text_content p {
+    font-size: 14px;
+  }
+
+  .text_content {
+    margin-top: -10px;
+  }
+
+  .img2 {
+    position: relative;
+    top: -10px;
+  }
+
+  .img3 {
+    position: relative;
+    top: -335px;
+  }
+
+  .img4 {
+    position: relative;
+    bottom: 625px;
+    left: 110px;
+  }
+
+  .text_content {
+    margin-top: 20px;
+  }
+
+  .imageBox {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 530px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img {
+    display: none !important;
+  }
+
+  .text_content {
+    text-align: center;
+  }
+
+  .text_content h1 {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  .text_content {
+    margin-top: 20px;
+  }
+
+  .text_content h2 {
+    font-size: 30px;
+  }
+
+  .text_content p {
+    font-size: 10px;
+    margin-top: -25px;
+  }
+
+  .img2 {
+    position: relative;
+    top: 10px;
+  }
+
+  .img3 {
+    width: 290px;
+    height: 300px;
+    position: relative;
+    top: -320px;
+  }
+
+  .img4 {
+    position: relative;
+    bottom: 618px;
+    left: 110px;
+  }
+  .imageBox {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img {
+    display: none !important;
+  }
+
+  .text_content {
+    text-align: center;
+  }
+
+  .text_content h1 {
+    font-size: 35px;
+    line-height: 10px;
+  }
+  .text_content {
+    margin-top: 30px;
+  }
+  .text_content h2 {
+    font-size: 30px;
+  }
+  .text_content p {
+    font-size: 9px;
+    margin-top: -25px;
+  }
+
+  .imageBox {
+    margin-bottom: 50px;
+  }
+
+  .img2 {
+    position: relative;
+    top: 10px;
+    width: 320px;
+    height: 334px;
+  }
+
+  .img3 {
+    width: 275px;
+    height: 285px;
+    position: relative;
+    top: -300px;
+  }
+
+  .img4 {
+    width: 115px;
+    height: 270px;
+    position: relative;
+    bottom: 580px;
+    left: 110px;
+  }
+}
