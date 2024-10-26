@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./header.module.css";
 import Link from "next/link";
-import { useState, useCallback } from "react";
+import { useState } from "react";
 // lib/fontawesome.ts
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // Manually import the CSS
@@ -17,8 +17,8 @@ const nuniton = Nunito({
   subsets: ["latin"],
 });
 
-const header = () => {
-  let [menu, setMenu] = useState(false);
+const Header = () => {
+  const [menu, setMenu] = useState(false);
 
   function toggleMenu() {
     setMenu((prevsVal) => !prevsVal);
@@ -110,7 +110,7 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
 
 {
   /*

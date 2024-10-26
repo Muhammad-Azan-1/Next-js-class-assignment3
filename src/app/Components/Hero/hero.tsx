@@ -41,7 +41,7 @@ const hero = () => {
           <p
             className={`${urbanist.className} text-sm leading-relaxed tracking-widest  first-letter:text-4xl`}
           >
-            Lorem Ipsum has been the industry's standard dummy text ever
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever
             <br /> since the 1500s, when an unknown printer took a galley of
             type
             <br /> and scrambled it to make a type specimen book.{" "}

@@ -1,6 +1,4 @@
 "client";
-import Image from "next/image";
-import styles from "./page.module.css";
 import Header from "./Components/Header/header";
 import Hero from "./Components/Hero/hero";
 import Footer from "./Components/Footer/footer";
