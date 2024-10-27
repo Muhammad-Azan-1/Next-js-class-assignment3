@@ -17,7 +17,7 @@ const hero = () => {
         {/* background - img */}
         <div className={`${styles.img}`}>
           <Image
-            src="/images/Ellipse 1.png"
+            src="/Images/Ellipse 1.png"
             alt="Scooter"
             width={250}
             height={250}

@@ -30,7 +30,7 @@ const footer = () => {
           <ul className={` leading-7`}>
             <li className="mb-1">
               <Image
-                src="/Images/logo.png"
+                src="/Images/Logo.png"
                 alt="Logo"
                 width={100}
                 height={100}
